@@ -33,3 +33,13 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+
+#lyrics{
+
+    visibility: hidden;
+}
+
+span{
+
+    font-weight: bold;
+}
