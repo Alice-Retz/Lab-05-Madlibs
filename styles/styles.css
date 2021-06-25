@@ -8,6 +8,7 @@ body {
 
 main {
     padding: 30px;
+
 }
 
 header {
@@ -37,9 +38,44 @@ footer {
 #lyrics{
 
     visibility: hidden;
+    background-color: white;
+    border-radius: 20px;
+    border-color: #A2D7D2;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 3px 3px #cfc6c0;
+    font-family: 'Lobster Two';
+    font-size: 30px;
 }
 
 span{
 
     font-weight: bold;
+    color: #84ada9;
+}
+span:hover {
+    color: red;
+}
+#input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+input {
+    margin: 7px;
+}
+button {
+    margin-top: 10px;
+    box-shadow: 5px 3px 3px #cfc6c0;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+img {
+    height: 20px;
 }

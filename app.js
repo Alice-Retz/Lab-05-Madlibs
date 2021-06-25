@@ -5,6 +5,7 @@ const verb1Input = document.getElementById('verb-1-input');
 const verb2Input = document.getElementById('verb-2-input');
 const adjective1Input = document.getElementById('adjective-1-input');
 const noun3Input = document.getElementById('noun-3-input');
+const verb3Input = document.getElementById('verb-3-input');
 const submitButton = document.getElementById('submit-button');
 const noun1 = document.getElementById('noun-1');
 const noun2 = document.getElementById('noun-2');
@@ -12,26 +13,31 @@ const verb1 = document.getElementById('verb-1');
 const verb2 = document.getElementById('verb-2');
 const adjective1 = document.getElementById('adjective-1');
 const noun3 = document.getElementById('noun-3');
+const verb3 = document.getElementById('verb-3');
 
 const lyrics = document.getElementById('lyrics');
 
-let array1 = [noun1Input, noun2Input, verb1Input, verb2Input, adjective1Input, noun3Input];
+let array1 = [noun1Input, noun2Input, verb1Input, verb2Input, adjective1Input, noun3Input, verb3Input];
 
-let array2 = [noun1, noun2, verb1, verb2, adjective1, noun3];
+let array2 = [noun1, noun2, verb1, verb2, adjective1, noun3, verb3];
 
  
 submitButton.addEventListener('click', change);
 
 function change(){
 
-  lyrics.style.visibility = 'visible';
+    lyrics.style.visibility = 'visible';
 
-for(var i = 0; i < array1.length; i++ ){
+    for (var i = 0; i < array1.length; i++){
 
-array2[i].textContent = array1[i].value.toUpperCase();
+        if (i === 6) {
+            array2[i].textContent = array1[i].value.toUpperCase() + "S";   
+        }
+        else {
+            array2[i].textContent = array1[i].value.toUpperCase();
+        }
 
-
-}
+    }
 
 }
 

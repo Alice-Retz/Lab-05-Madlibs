@@ -8,17 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet"> 
     <title>My App</title>
 </head>
 
 <body>
     <header>
-        <h1>My App</h1>
+        <h1>Evon, Tanner, and Alice's Madlibs</h1>
         <img src="assets/big-logo.png" />
     </header>
     
     <main>
-
+        <span id="input">
         <section>
             <input id="noun-1-input" type="text" value="noun">
             <input id="noun-2-input" type="text" value="noun">
@@ -30,9 +33,9 @@
             <input id="adjective-1-input" type="text" value="adjective">
             <input id="noun-3-input" type="text" value="noun">
         </section>
-        
-        
-        <button id="submit-button">SUBMIT</button>
+        <input id="verb-3-input" type="text" value="verb">
+        <button id="submit-button"><img src="assets/crown.png"></button>
+        </span>
 
         <div id="lyrics">
 
@@ -48,7 +51,7 @@
 
         <section> Because I'm easy come, easy go, Little high, little low</section>
 
-        <section>Any way the wind blows doesn't really matter to, Me, to me</section>
+        <section>Any way the wind <span id="verb-3">(verb)</span> doesn't really matter to, Me, to me</section>
         
         </div>
         
