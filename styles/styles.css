@@ -1,0 +1,35 @@
+
+body {        
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #FFFCFA;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    padding: 30px;
+}
+
+header {
+    background-color: #A2D7D2;
+    height: 110px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #FAF0EA;
+    padding: 10px;
+}
